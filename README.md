@@ -9,8 +9,8 @@
  - [ ] • 100% Customizable, all colors can be customized  
  - [ ] • Font Awesome Icons  
  - [ ] • Google Fonts
- 
-![Profile views](https://gpvc.arturio.dev/raihaninfo) 
+
+![Profile views](https://gpvc.arturio.dev/raihaninfo)
 ## view live demo >
 
 ![enter image description here](https://1.bp.blogspot.com/-DsocnjL3wmc/YCujetSrhPI/AAAAAAAAASQ/ujBErKMEBMAkawfJite8Lt2JDPkRsmFYQCLcBGAsYHQ/s370/qrcode_raihaninfo.github.io.png)
