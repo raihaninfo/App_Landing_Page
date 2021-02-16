@@ -594,3 +594,48 @@ Video POpup Stard
     margin: 0 0 30px;
     line-height: 26px;
 }
+
+/* ------------ how it work section--------------- */
+.how-it-work-item{
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.how-it-work-item.line-right::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 50%;
+    top: 60px;
+    background-color: var(--main-color);
+    z-index: -1;
+}
+.how-it-work-item .step{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-color: var(--main-color);
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0 0 15px;
+}
+.how-it-work-item h2{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--black-900);
+    text-transform: capitalize;
+}
+.how-it-work-item p{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    color: var(--black-400);
+    line-height: 26px;
+}
