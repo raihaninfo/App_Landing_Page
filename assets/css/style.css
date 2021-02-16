@@ -98,6 +98,28 @@ ul li{
     color: #ffffff;
     background-color: var(--main-color);
 }
+
+.btn-2{
+    background-color: var(--main-color);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    box-shadow: var(--shadaw-black-100);
+    font-weight: 500;
+}
+.btn-2:focus{
+    box-shadow: var(--shadaw-black-100);
+}
+.btn-2:hover{
+    color: var(--main-color);
+    background-color: #ffffff;
+}
+
+
 .home .home-btn .video-play-btn{
     margin-left: 30px;
     height: 50px;
@@ -522,4 +544,53 @@ Video POpup Stard
     max-width: 250px;
     display: block;
     margin: auto;
+}
+/*------------- download app section--------------- */
+.app-download{
+    background-image: url('/assets/images/download-app-bg.jpg');
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+.app-download .section-title h2{
+    color: #ffffff;
+}
+.app-download::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: var(--main-to-dark-color);
+    opacity: 0.8;
+}
+.app-download-item{
+    background-color: var(--black-000);
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: var(--black-100);
+}
+.app-download-item i{
+    font-size: 30px;
+    color: var(--main-color);
+    display: inline-block;
+}
+.app-download-item h3{
+    font-size: 22px;
+    color: var(--black-900);
+    margin: 20px 0;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.app-download-item p{
+    font-size: 16px;
+    color: var(--black-400);
+    font-weight: 300;
+    margin: 0 0 30px;
+    line-height: 26px;
 }
