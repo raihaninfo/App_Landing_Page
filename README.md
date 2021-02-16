@@ -9,6 +9,7 @@
  - [ ] • 100% Customizable, all colors can be customized  
  - [ ] • Font Awesome Icons  
  - [ ] • Google Fonts
+ 
 ![Profile views](https://gpvc.arturio.dev/raihaninfo) 
 ## view live demo >
 
