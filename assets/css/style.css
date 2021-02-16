@@ -513,3 +513,13 @@ Video POpup Stard
 .fun-fact-item.style-4{
     background-color: var(--main-color);
 }
+/* ---------Apps Srreenshort section------------ */
+..screenshort-item {
+    margin: 15px;
+}
+.screenshort-item img{
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: auto;
+}

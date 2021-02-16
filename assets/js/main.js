@@ -25,7 +25,7 @@ $(document).ready(function () {
             }
         }
     });
-            // owl carousel
+            // feature carousel
     $('.feature-corosel').owlCarousel({
         loop:true,
         margin:0,
@@ -42,5 +42,23 @@ $(document).ready(function () {
                 items:3,
             }
             }
-        });
+    });
+    // screenshort carousel
+    $('.screenshort-crosel').owlCarousel({
+        loop:true,
+        margin:0,
+        autoplay:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:2,
+            },
+            1000:{
+                items:4,
+            }
+            }
+    });
 });
