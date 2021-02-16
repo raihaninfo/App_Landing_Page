@@ -342,6 +342,7 @@ Video POpup Stard
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
+    margin: 0;
 }
 .section-title h2 span{
     color: var(--main-color);
@@ -451,5 +452,64 @@ Video POpup Stard
     border-radius: 5px;
 }
 .owl-carousel button.owl-dot.active{
+    background-color: var(--main-color);
+}
+
+/* ---------- fun facts section ----------- */
+.fun-facts{
+    background-color: var(--black-100);
+}
+.fun-facts .section-title{
+    margin-bottom: 20px;
+}
+.fun-facts .section-title h2{
+    text-align: left;
+}
+.fun-facts-img img{
+    max-width: 250px;
+    width: 100%;
+    box-shadow: var(--shadaw-black-100);
+    border-radius: 32px;
+    animation: bounceTop_01 3s ease infinite;
+}
+.fan-facts-text p{
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--black-400);
+    margin: 0 0 15px;
+    font-weight: 400;
+}
+.fun-fact-item{
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: var(--shadaw-black-100);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.fun-fact-item h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 5px;
+}
+.fun-fact-item span{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+    line-height: 26px;
+    display: block;
+    color: #ffffff;
+}
+.fun-fact-item.style-1{
+    background-color: var(--color-1);
+}
+.fun-fact-item.style-2{
+    background-color: var(--color-2);
+}
+.fun-fact-item.style-3{
+    background-color: var(--color-3);
+}
+.fun-fact-item.style-4{
     background-color: var(--main-color);
 }
