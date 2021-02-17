@@ -54,7 +54,7 @@ body{
     --bg-dark: #2b2c2f;
     --main-to-dark-color: var(--main-color);
     --dark-to-main-color: var(--bg-dark);
-    --shadaw-black-100: 0 5px 15px rgba(0,0,0,1);
+    --shadaw-black-100: 0 5px 15px rgba(0,0,0,0.1);
     --shadaw-black-300: 0 5px 15px rgba(0,0,0,0.3);
     --black-900: #000000;
     --black-400: #555555;
@@ -536,7 +536,7 @@ Video POpup Stard
     background-color: var(--main-color);
 }
 /* ---------Apps Srreenshort section------------ */
-..screenshort-item {
+.screenshort-item {
     margin: 15px;
 }
 .screenshort-item img{
@@ -773,4 +773,29 @@ Video POpup Stard
 .pricing-plan .pricing-footer{
     padding: 20px 30px 30px;
     text-align:center;
+}
+
+/* ---------team-carousel------------ */
+.team{
+    background-color: var(--black-100);
+}
+.team-item{
+    margin: 15px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadaw-black-100);
+}
+.team-item h3{
+    font-size: 18px;
+    color: var(--black-900);
+    font-weight: 500;
+    margin: 15px 0 5px;
+    text-transform: capitalize;
+}
+.team-item span{
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-400);
+    text-transform: capitalize;
 }
