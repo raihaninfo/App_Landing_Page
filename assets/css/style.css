@@ -799,3 +799,60 @@ Video POpup Stard
     color: var(--black-400);
     text-transform: capitalize;
 }
+
+/* -----------faq section ------------ */
+.faq .accordion-item:not(:last-child){
+    margin-bottom: 20px;
+}
+.faq .accordion-header{
+    box-shadow: var(--shadaw-black-100);
+    padding: 20px 50px 20px 30px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    position: relative;
+}
+.faq .accordion-header::before{
+    content: "\f067";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    color: var(--black-400);
+    transition: all 0.5s ease;
+}
+.faq .accordion-header:not(.collapsed){
+    background-color: var(--main-color);
+    box-shadow: none;
+}
+.faq .accordion-header:not(.collapsed)::before{
+    content: "\f068";
+    color: #ffffff;
+}
+.faq .accordion-header h3{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black-400);
+    margin: 0;
+    transition: all 0.5s ease;
+}
+.faq .accordion-header:not(.collapsed) h3{
+    color: #ffffff;
+}
+.faq .accordion-body{
+    padding: 20px 30px;
+    background-color: var(--black-100);
+}
+.faq .accordion-header p{
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--black-400);
+    line-height: 26px;
+    margin: 0;
+}
