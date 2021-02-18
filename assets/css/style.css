@@ -89,9 +89,7 @@ ul {
     list-style: none;
 }
 
-/* ul li{
-    display: inline-block
-} */
+
 .btn-1 {
     background-color: #ffffff;
     padding: 12px 30px;
@@ -1110,4 +1108,33 @@ Video POpup Stard
     font-size: 16px;
     color: rgba(255, 255, 255, 0.9);
     font-weight: 300;
+}
+
+/* -------------------------------------------------------------
+********************** Responsive CSS *************************
+------------------------------------------------------------------ */
+@media(max-width:991px){
+    .navbar-toggler{
+        background-color: var(--dark-to-main-color);
+        box-shadow: var(--shadaw-black-300);
+        height: 34px;
+        width: 44px;
+        padding: 0;
+        font-size: 17px;
+        color: #ffffff;
+    }
+    .navbar-nav{
+        background-color: var(--dark-to-main-color);
+        box-shadow: var(--shadaw-black-300);
+    }
+    .navbar .nav-item{
+        margin: 0;
+        padding: 5px 15px;
+    }
+    .navbar.navbar-shrink .navbar-toggler{
+        
+    }
+    .navbar.navbar-shrink .navbar-nav{
+        background-color: var(--main-color);
+    }
 }
