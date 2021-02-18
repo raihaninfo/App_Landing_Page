@@ -32,13 +32,14 @@ The contents of This file are outlined below >>>>
 /*-----------------------------------
 02. DEFAULT CSS
 -------------------------------------*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
-body{
+
+body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -46,7 +47,8 @@ body{
     background-color: #ffffff;
     line-height: 1.5;
 }
-:root{
+
+:root {
     --main-color: #7857fe;
     --color-1: #e91e63;
     --color-2: #f5ae10;
@@ -54,32 +56,40 @@ body{
     --bg-dark: #2b2c2f;
     --main-to-dark-color: var(--main-color);
     --dark-to-main-color: var(--bg-dark);
-    --shadaw-black-100: 0 5px 15px rgba(0,0,0,0.1);
-    --shadaw-black-300: 0 5px 15px rgba(0,0,0,0.3);
+    --shadaw-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --shadaw-black-300: 0 5px 15px rgba(0, 0, 0, 0.3);
     --black-900: #000000;
     --black-400: #555555;
     --black-100: #f7f7f7;
     --black-000: #ffffff;
-    --black-alpha-100: rgba(0,0,0,05);
+    --black-alpha-100: rgba(0, 0, 0, 05);
 }
-img{
+
+img {
     max-width: 100%;
     vertical-align: middle;
 }
 
-a, a:hover, a:active, a:visited, a:focus{
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
     text-decoration: none
 }
-a{
+
+a {
     display: inline-block
 }
-ul{
+
+ul {
     list-style: none;
 }
-ul li{
+
+/* ul li{
     display: inline-block
-}
-.btn-1{
+} */
+.btn-1 {
     background-color: #ffffff;
     padding: 12px 30px;
     border: none;
@@ -91,15 +101,17 @@ ul li{
     box-shadow: var(--shadaw-black-300);
     font-weight: 500;
 }
-.btn-1:focus{
+
+.btn-1:focus {
     box-shadow: var(--shadaw-black-300);
 }
-.btn-1:hover{
+
+.btn-1:hover {
     color: #ffffff;
     background-color: var(--main-color);
 }
 
-.btn-2{
+.btn-2 {
     background-color: var(--main-color);
     padding: 12px 30px;
     border: none;
@@ -111,16 +123,18 @@ ul li{
     box-shadow: var(--shadaw-black-100);
     font-weight: 500;
 }
-.btn-2:focus{
+
+.btn-2:focus {
     box-shadow: var(--shadaw-black-100);
 }
-.btn-2:hover{
+
+.btn-2:hover {
     color: var(--main-color);
     background-color: #ffffff;
 }
 
 
-.home .home-btn .video-play-btn{
+.home .home-btn .video-play-btn {
     margin-left: 30px;
     height: 50px;
     width: 50px;
@@ -128,97 +142,119 @@ ul li{
     font-size: 16px;
     animation: pulse_01 2s ease infinite;
 }
-.home .home-btn .video-play-btn:hover{
+
+.home .home-btn .video-play-btn:hover {
     animation: none;
     box-shadow: var(--shadaw-black-300);
 }
-.home .home-btn .video-play-btn i{
+
+.home .home-btn .video-play-btn i {
     line-height: 50px;
 }
+
 @keyframes spin_01 {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
-@keyframes bounceTop_01{
-    0%,100%{
+
+@keyframes bounceTop_01 {
+
+    0%,
+    100% {
         transform: translateY(-30px);
     }
-    50%{
+
+    50% {
         transform: translateY(0px);
     }
 }
-@keyframes pulse_01{
-    0%{
+
+@keyframes pulse_01 {
+    0% {
         transform: scale(0.94);
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
     }
-    70%{
+
+    70% {
         transform: scale(1);
         box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
     }
-    100%{
+
+    100% {
         transform: scale(0.94);
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
     }
 }
-.effect-wrap .effect{
+
+.effect-wrap .effect {
     position: absolute;
     z-index: 1;
 }
-.effect-wrap .effect-1{
+
+.effect-wrap .effect-1 {
     left: 20%;
     top: 20%;
     font-size: 20px;
     color: var(--color-2);
     animation: spin_01 5s linear infinite;
 }
-.effect-wrap .effect-2{
+
+.effect-wrap .effect-2 {
     right: 5%;
     top: 10%;
     font-size: 25px;
     color: rgba(255, 255, 255, 0.5);
     animation: spin_01 5s linear infinite;
 }
-.effect-wrap .effect-3{
+
+.effect-wrap .effect-3 {
     left: 5%;
     bottom: 30%;
     font-size: 25px;
     color: var(--color-3);
     animation: bounceTop_01 3s linear infinite;
 }
-.section-padding{
+
+.section-padding {
     padding: 80px 0;
 }
+
 /* ------------------
     navbar          
 ---------------------*/
-.navbar{
+.navbar {
     background-color: transparent;
     padding: 20px 0;
     transition: all 0.5s ease;
 }
-.navbar.navbar-shrink{
-    box-shadow: 0 10px 10px rgba(0,0,0,1);
+
+.navbar.navbar-shrink {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
     background-color: var(--main-color);
     padding: 10px 0;
 }
-.navbar> .container{
-    padding: 0 15px ;
+
+.navbar>.container {
+    padding: 0 15px;
 }
-.navbar .navbar-brand{
+
+.navbar .navbar-brand {
     font-size: 30px;
     color: #ffffff;
     font-weight: 500;
     text-transform: capitalize;
 }
-.navbar .nav-item{
+
+.navbar .nav-item {
     margin-left: 40px;
 }
-.navbar .nav-item .nav-link{
+
+.navbar .nav-item .nav-link {
     color: #ffffff;
     text-transform: capitalize;
     font-size: 16px;
@@ -226,7 +262,8 @@ ul li{
     padding: 5px 0;
     position: relative;
 }
-.navbar .nav-item .nav-link::before{
+
+.navbar .nav-item .nav-link::before {
     content: "";
     position: absolute;
     left: 0;
@@ -237,14 +274,16 @@ ul li{
     transition: all 0.5s ease;
     transform: scale(0);
 }
+
 .navbar .nav-item .nav-link.active::before,
-.navbar .nav-item .nav-link:hover:before{
+.navbar .nav-item .nav-link:hover:before {
     transform: scale(1);
 }
+
 /* -----------------
     Home section
 -------------------- */
-.home{
+.home {
     min-height: 100vh;
     padding: 150px 0;
     background-color: var(--main-to-dark-color);
@@ -252,33 +291,39 @@ ul li{
     position: relative;
     z-index: 1;
 }
+
 .home-text h1 {
     font-size: 45px;
     font-weight: 700;
     color: #ffffff;
     margin: 0 0 20px;
 }
-.home-text p{
+
+.home-text p {
     font-size: 18px;
     line-height: 20px;
     color: #ffffff;
     margin: 0;
     font-weight: 300;
 }
-.home .home-btn{
+
+.home .home-btn {
     margin-top: 40px;
 }
-.home-img img{
+
+.home-img img {
     max-width: 250px;
     width: 100%;
     box-shadow: var(--shadaw-black-100);
     border-radius: 32px;
     animation: bounceTop_01 3s ease infinite;
 }
-.home-img{
+
+.home-img {
     position: relative;
 }
-.home-img .sircle{
+
+.home-img .sircle {
     position: absolute;
     z-index: 1;
     height: 400px;
@@ -289,7 +334,8 @@ ul li{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.home-img .sircle::before{
+
+.home-img .sircle::before {
     content: '';
     position: absolute;
     height: 60px;
@@ -301,10 +347,11 @@ ul li{
     transform-origin: 170px 170px;
     animation: spin_01 10s linear infinite;
 }
+
 /* ------------------
 Video POpup Stard
 --------------------- */
-.video-popup{
+.video-popup {
     padding: 30px;
     position: fixed;
     left: 0;
@@ -312,7 +359,7 @@ Video POpup Stard
     height: 100%;
     width: 100%;
     z-index: 1999;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -320,11 +367,13 @@ Video POpup Stard
     visibility: hidden;
     transition: all 0.5s ease;
 }
-.video-popup.open{
+
+.video-popup.open {
     opacity: 1;
     visibility: visible;
 }
-.video-popup .video-popup-close{
+
+.video-popup .video-popup-close {
     position: absolute;
     right: 0;
     top: -30px;
@@ -336,17 +385,20 @@ Video POpup Stard
     cursor: pointer;
     color: #ffffff;
 }
-.video-popup-inner{
+
+.video-popup-inner {
     width: 100%;
     max-width: 900px;
     position: relative;
 }
-.video-popup .iframe-box{
+
+.video-popup .iframe-box {
     height: 0;
     overflow: hidden;
     padding-top: 56.25%;
 }
-.video-popup #plear-1{
+
+.video-popup #plear-1 {
     position: absolute;
     left: 0;
     top: 0;
@@ -354,11 +406,13 @@ Video POpup Stard
     height: 100%;
     border: 0;
 }
+
 /* feture section */
-.section-title{
+.section-title {
     margin-bottom: 60px;
 }
-.section-title h2{
+
+.section-title h2 {
     font-size: 40px;
     color: var(--black-900);
     font-weight: 700;
@@ -366,11 +420,13 @@ Video POpup Stard
     text-align: center;
     margin: 0;
 }
-.section-title h2 span{
+
+.section-title h2 span {
     color: var(--main-color);
 }
+
 /* feature section */
-.feature .feature-item{
+.feature .feature-item {
     box-shadow: var(--shadaw-black-100);
     margin: 15px;
     padding: 30px;
@@ -380,8 +436,9 @@ Video POpup Stard
     z-index: 1;
     overflow: hidden;
 }
+
 .feature .feature-item::before,
-.feature .feature-item::after{
+.feature .feature-item::after {
     content: '';
     position: absolute;
     z-index: -1;
@@ -389,29 +446,34 @@ Video POpup Stard
     transition: all 0.5s ease;
     opacity: 0;
 }
-.feature .feature-item::before{
+
+.feature .feature-item::before {
     height: 20px;
     width: 20px;
     background-color: var(--color-1);
     left: -20px;
     top: 40%;
 }
-.feature .feature-item:hover::before{
+
+.feature .feature-item:hover::before {
     left: 10px;
     opacity: 1;
 }
-.feature .feature-item:hover::after{
+
+.feature .feature-item:hover::after {
     opacity: 1;
     right: -15px;
 }
-.feature .feature-item::after{
+
+.feature .feature-item::after {
     height: 30px;
     width: 30px;
     background-color: var(--color-2);
     right: -30px;
     top: 80%;
 }
-.feature .feature-item .icon{
+
+.feature .feature-item .icon {
     height: 50px;
     width: 50px;
     margin: 0 auto 30px;
@@ -422,7 +484,8 @@ Video POpup Stard
     color: var(--main-color);
     transition: all 0.5s ease;
 }
-.feature .feature-item .icon::before{
+
+.feature .feature-item .icon::before {
     content: '';
     position: absolute;
     left: 100px;
@@ -434,38 +497,45 @@ Video POpup Stard
     z-index: -1;
     opacity: 0;
 }
-.feature .feature-item:hover .icon{
+
+.feature .feature-item:hover .icon {
     color: #ffffff;
     font-size: 20px;
 }
-.feature .feature-item:hover .icon::before{
+
+.feature .feature-item:hover .icon::before {
     left: 0;
     border-radius: 50%;
     opacity: 1;
 }
-.feature .feature-item .icon i{
+
+.feature .feature-item .icon i {
     line-height: 60px;
 }
-.feature .feature-item h3{
+
+.feature .feature-item h3 {
     font-size: 22px;
     margin: 0 0 20px;
     color: var(--black-900);
     font-weight: 500;
     text-transform: capitalize;
 }
-.feature .feature-item p{
+
+.feature .feature-item p {
     font-size: 16px;
     line-height: 26px;
     font-weight: 300;
     color: var(--black-400);
     margin: 0 0 15px;
 }
-.owl-carousel .owl-dots{
+
+.owl-carousel .owl-dots {
     margin: 0 15px;
     text-align: center;
     margin-top: 20px;
 }
-.owl-carousel button.owl-dot{
+
+.owl-carousel button.owl-dot {
     height: 8px;
     width: 24px;
     background-color: #dddddd;
@@ -473,48 +543,56 @@ Video POpup Stard
     margin: 0 4px;
     border-radius: 5px;
 }
-.owl-carousel button.owl-dot.active{
+
+.owl-carousel button.owl-dot.active {
     background-color: var(--main-color);
 }
 
 /* ---------- fun facts section ----------- */
-.fun-facts{
+.fun-facts {
     background-color: var(--black-100);
 }
-.fun-facts .section-title{
+
+.fun-facts .section-title {
     margin-bottom: 20px;
 }
-.fun-facts .section-title h2{
+
+.fun-facts .section-title h2 {
     text-align: left;
 }
-.fun-facts-img img{
+
+.fun-facts-img img {
     max-width: 250px;
     width: 100%;
     box-shadow: var(--shadaw-black-100);
     border-radius: 32px;
     animation: bounceTop_01 3s ease infinite;
 }
-.fan-facts-text p{
+
+.fan-facts-text p {
     font-size: 16px;
     line-height: 26px;
     color: var(--black-400);
     margin: 0 0 15px;
     font-weight: 400;
 }
-.fun-fact-item{
+
+.fun-fact-item {
     padding: 40px 30px;
     text-align: center;
     box-shadow: var(--shadaw-black-100);
     border-radius: 10px;
     margin-top: 30px;
 }
-.fun-fact-item h3{
+
+.fun-fact-item h3 {
     font-size: 40px;
     font-weight: 700;
     color: #ffffff;
     margin: 0 0 5px;
 }
-.fun-fact-item span{
+
+.fun-fact-item span {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 300;
@@ -523,30 +601,37 @@ Video POpup Stard
     display: block;
     color: #ffffff;
 }
-.fun-fact-item.style-1{
+
+.fun-fact-item.style-1 {
     background-color: var(--color-1);
 }
-.fun-fact-item.style-2{
+
+.fun-fact-item.style-2 {
     background-color: var(--color-2);
 }
-.fun-fact-item.style-3{
+
+.fun-fact-item.style-3 {
     background-color: var(--color-3);
 }
-.fun-fact-item.style-4{
+
+.fun-fact-item.style-4 {
     background-color: var(--main-color);
 }
+
 /* ---------Apps Srreenshort section------------ */
 .screenshort-item {
     margin: 15px;
 }
-.screenshort-item img{
+
+.screenshort-item img {
     width: 100%;
     max-width: 250px;
     display: block;
     margin: auto;
 }
+
 /*------------- download app section--------------- */
-.app-download{
+.app-download {
     background-image: url('../images/download-app-bg.jpg');
     background-position: center top;
     background-attachment: fixed;
@@ -554,10 +639,12 @@ Video POpup Stard
     position: relative;
     z-index: 1;
 }
-.app-download .section-title h2{
+
+.app-download .section-title h2 {
     color: #ffffff;
 }
-.app-download::before{
+
+.app-download::before {
     content: '';
     position: absolute;
     left: 0;
@@ -568,26 +655,30 @@ Video POpup Stard
     background-color: var(--main-to-dark-color);
     opacity: 0.8;
 }
-.app-download-item{
+
+.app-download-item {
     background-color: var(--black-000);
     padding: 30px;
     text-align: center;
     border-radius: 10px;
     box-shadow: var(--black-100);
 }
-.app-download-item i{
+
+.app-download-item i {
     font-size: 30px;
     color: var(--main-color);
     display: inline-block;
 }
-.app-download-item h3{
+
+.app-download-item h3 {
     font-size: 22px;
     color: var(--black-900);
     margin: 20px 0;
     font-weight: 500;
     text-transform: capitalize;
 }
-.app-download-item p{
+
+.app-download-item p {
     font-size: 16px;
     color: var(--black-400);
     font-weight: 300;
@@ -596,13 +687,14 @@ Video POpup Stard
 }
 
 /* ------------ how it work section--------------- */
-.how-it-work-item{
+.how-it-work-item {
     padding: 30px;
     text-align: center;
     position: relative;
     z-index: 1;
 }
-.how-it-work-item.line-right::before{
+
+.how-it-work-item.line-right::before {
     content: '';
     position: absolute;
     height: 2px;
@@ -612,7 +704,8 @@ Video POpup Stard
     background-color: var(--main-color);
     z-index: -1;
 }
-.how-it-work-item .step{
+
+.how-it-work-item .step {
     display: inline-block;
     height: 60px;
     width: 60px;
@@ -625,14 +718,16 @@ Video POpup Stard
     font-weight: 500;
     margin: 0 0 15px;
 }
-.how-it-work-item h2{
+
+.how-it-work-item h2 {
     margin: 20px 0;
     font-size: 22px;
     font-weight: 500;
     color: var(--black-900);
     text-transform: capitalize;
 }
-.how-it-work-item p{
+
+.how-it-work-item p {
     font-size: 16px;
     font-weight: 300;
     margin: 0;
@@ -641,17 +736,19 @@ Video POpup Stard
 }
 
 /* ------------- testimonials Section ------------ */
-.testimonials{
+.testimonials {
     background-color: var(--black-100);
 }
-.testimonials-item{
+
+.testimonials-item {
     margin: 15px;
     padding: 30px;
     box-shadow: var(--shadaw-black-100);
     border-radius: 10px;
     text-align: center;
 }
-.testimonials-item .img-box{
+
+.testimonials-item .img-box {
     height: 100px;
     width: 100px;
     display: inline-block;
@@ -660,62 +757,71 @@ Video POpup Stard
     border-radius: 50%;
     position: relative;
 }
-.testimonials-item .img-box img{
+
+.testimonials-item .img-box img {
     border-radius: 50%;
     width: 100%;
 }
-.testimonials-item .img-box i{
-   position: absolute;
-   height: 30px;
-   width: 30px;
-   background-color: var(--main-color);
-   border-radius: 50%;
-   color: #ffffff;
-   font-size: 12px;
-   line-height: 30px;
-   text-align: center;
-   left: calc(100% - 15px);
-   top: calc(50% - 15px);
+
+.testimonials-item .img-box i {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    left: calc(100% - 15px);
+    top: calc(50% - 15px);
 }
-.testimonials-item  p{
+
+.testimonials-item p {
     font-size: 16px;
     margin: 0 0 20px;
     color: var(--black-400);
     line-height: 26px;
     font-weight: 300;
 }
-.testimonials-item  h3{
+
+.testimonials-item h3 {
     font-size: 18px;
     color: var(--black-900);
     font-weight: 500;
     margin: 0 0 5px;
     text-transform: capitalize;
 }
-.testimonials-item  span{
+
+.testimonials-item span {
     display: block;
     font-size: 16px;
     color: var(--black-400);
     font-weight: 300;
 }
-.testimonials-item  .rating{
+
+.testimonials-item .rating {
     margin-top: 10px;
 }
-.testimonials-item  .rating i{
+
+.testimonials-item .rating i {
     display: inline-block;
     font-size: 16px;
     color: var(--color-2);
 }
 
 /* -------- Pricing section --------------- */
-.pricing-plan{
+.pricing-plan {
     box-shadow: var(--shadaw-black-100);
     border-radius: 10px;
 }
-.pricing-plan .pricing-header{
+
+.pricing-plan .pricing-header {
     padding: 20px 30px;
     border-bottom: 1px solid var(--black-alpha-100);
 }
-.pricing-plan .pricing-header h3{
+
+.pricing-plan .pricing-header h3 {
     text-align: center;
     font-size: 30px;
     color: var(--black-900);
@@ -723,25 +829,29 @@ Video POpup Stard
     text-transform: capitalize;
     margin: 0;
 }
-.pricing-plan .pricing-price{
+
+.pricing-plan .pricing-price {
     padding: 40px 30px;
     display: flex;
     justify-content: center;
     line-height: 0.7;
 }
-.pricing-plan .pricing-price .currency{
+
+.pricing-plan .pricing-price .currency {
     font-size: 16px;
     font-weight: 300;
     color: var(--black-400);
     margin-right: 5px;
     align-self: flex-start;
 }
-.pricing-plan .pricing-price .price{
+
+.pricing-plan .pricing-price .price {
     font-size: 80px;
     font-weight: 700;
     color: var(--main-color);
 }
-.pricing-plan .pricing-price .period{
+
+.pricing-plan .pricing-price .period {
     font-size: 14px;
     font-weight: 300;
     color: var(--black-400);
@@ -749,10 +859,12 @@ Video POpup Stard
     align-self: flex-end;
     text-transform: uppercase;
 }
-.pricing-plan .pricing-body{
+
+.pricing-plan .pricing-body {
     padding: 0 30px;
 }
-.pricing-plan .pricing-body ul li{
+
+.pricing-plan .pricing-body ul li {
     font-size: 16px;
     font-weight: 300;
     color: var(--black-400);
@@ -761,38 +873,44 @@ Video POpup Stard
     line-height: 26px;
     position: relative;
 }
-.pricing-plan .pricing-body ul li:last-child{
+
+.pricing-plan .pricing-body ul li:last-child {
     border-bottom: none;
 }
-.pricing-plan .pricing-body ul li i{
+
+.pricing-plan .pricing-body ul li i {
     color: var(--main-color);
     position: absolute;
     left: 0;
     top: 12px;
 }
-.pricing-plan .pricing-footer{
+
+.pricing-plan .pricing-footer {
     padding: 20px 30px 30px;
-    text-align:center;
+    text-align: center;
 }
 
 /* ---------team-carousel------------ */
-.team{
+.team {
     background-color: var(--black-100);
 }
-.team-item{
+
+.team-item {
     margin: 15px;
     padding: 30px;
     border-radius: 15px;
     box-shadow: var(--shadaw-black-100);
 }
-.team-item h3{
+
+.team-item h3 {
     font-size: 18px;
     color: var(--black-900);
     font-weight: 500;
     margin: 15px 0 5px;
     text-transform: capitalize;
 }
-.team-item span{
+
+.team-item span {
     display: block;
     font-size: 16px;
     font-weight: 300;
@@ -801,17 +919,19 @@ Video POpup Stard
 }
 
 /* -----------faq section ------------ */
-.faq .accordion-item:not(:last-child){
+.faq .accordion-item:not(:last-child) {
     margin-bottom: 20px;
 }
-.faq .accordion-header{
+
+.faq .accordion-header {
     box-shadow: var(--shadaw-black-100);
     padding: 20px 50px 20px 30px;
     transition: all 0.5s ease;
     cursor: pointer;
     position: relative;
 }
-.faq .accordion-header::before{
+
+.faq .accordion-header::before {
     content: "\f067";
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
@@ -827,29 +947,35 @@ Video POpup Stard
     color: var(--black-400);
     transition: all 0.5s ease;
 }
-.faq .accordion-header:not(.collapsed){
+
+.faq .accordion-header:not(.collapsed) {
     background-color: var(--main-color);
     box-shadow: none;
 }
-.faq .accordion-header:not(.collapsed)::before{
+
+.faq .accordion-header:not(.collapsed)::before {
     content: "\f068";
     color: #ffffff;
 }
-.faq .accordion-header h3{
+
+.faq .accordion-header h3 {
     font-size: 18px;
     font-weight: 500;
     color: var(--black-400);
     margin: 0;
     transition: all 0.5s ease;
 }
-.faq .accordion-header:not(.collapsed) h3{
+
+.faq .accordion-header:not(.collapsed) h3 {
     color: #ffffff;
 }
-.faq .accordion-body{
+
+.faq .accordion-body {
     padding: 20px 30px;
     background-color: var(--black-100);
 }
-.faq .accordion-header p{
+
+.faq .accordion-header p {
     font-weight: 300;
     font-size: 16px;
     color: var(--black-400);
@@ -858,21 +984,24 @@ Video POpup Stard
 }
 
 /* ------- contact section ------------ */
-.contact{
+.contact {
     background-color: var(--black-100);
 }
-.contact-info h3{
+
+.contact-info h3 {
     font-size: 22px;
     color: var(--black-900);
     font-weight: 500;
     margin: 0 0 40px;
 }
-.contact-info-item{
+
+.contact-info-item {
     position: relative;
     padding-left: 55px;
     margin-bottom: 30px;
 }
-.contact-info-item i{
+
+.contact-info-item i {
     position: absolute;
     left: 0;
     top: 0;
@@ -885,23 +1014,27 @@ Video POpup Stard
     text-align: center;
     line-height: 38px;
 }
-.contact-info-item h4{
+
+.contact-info-item h4 {
     font-size: 18px;
     font-weight: 400;
     margin: 0 0 10px;
     color: var(--black-900);
 }
-.contact-info-item p{
+
+.contact-info-item p {
     font-size: 16px;
     font-weight: 300;
     margin: 0;
     line-height: 26px;
     color: var(--black-400);
 }
-.contact-form .form-group{
+
+.contact-form .form-group {
     margin-bottom: 25px;
 }
-.contact-form .form-control{
+
+.contact-form .form-control {
     height: 52px;
     border: 1px solid transparent;
     box-shadow: var(--shadaw-black-100);
@@ -911,11 +1044,67 @@ Video POpup Stard
     background-color: var(--black-000);
     transition: all 0.5s ease;
 }
-.contact-form textarea.form-control{
+
+.contact-form textarea.form-control {
     height: 140px;
     padding-top: 12px;
     resize: none;
 }
-.contact-form .form-control:focus{
+
+.contact-form .form-control:focus {
     border-color: var(--main-color);
+}
+
+/* -------- footer section--------------- */
+.footer {
+    background-color: var(--main-color);
+    padding: 50px 0 0;
+}
+
+.footer-col h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 25px;
+    text-transform: capitalize;
+}
+
+.footer-col p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0;
+}
+
+.footer-col ul {
+    margin: 0;
+}
+
+.footer-col ul li:not(:last-child) {
+    border-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0;
+    display: block;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+}
+
+.footer-col ul li a:hover {
+    padding-left: 5px;
+}
+
+.footer .copyright-text {
+    margin-top: 50px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
 }
