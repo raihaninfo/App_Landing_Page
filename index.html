@@ -58,22 +58,22 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">home</a>
+                        <a class="nav-link active" data-scroll-nav="0" href="#">home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Feature</a>
+                        <a class="nav-link" data-scroll-nav="1" href="#">Feature</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Screensort</a>
+                        <a class="nav-link" data-scroll-nav="2" href="#">Screensort</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Testimonials</a>
+                        <a class="nav-link" data-scroll-nav="4" href="#">Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" data-scroll-nav="5" href="#">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contract</a>
+                        <a class="nav-link" data-scroll-nav="6" href="#">Contract</a>
                     </li>
                 </ul>
             </div>
@@ -82,7 +82,7 @@
     <!-- Navbar End -->
 
     <!-- Home section Stard -->
-    <section class="home d-flex align-items-center">
+    <section class="home d-flex align-items-center" id="Home" data-scroll-index="0">
         <div class="effect-wrap">
             <i class="fas fa-plus effect effect-1"></i>
             <i class="fas fa-plus effect effect-2"></i>
@@ -96,8 +96,8 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit nam temporibus porro facere
                             placeat inventore eveniet dignissimos!</p>
                         <div class="home-btn">
-                            <a href="#" class="btn btn-1">download App</a>
-                            <button class="btn btn-1 video-play-btn">
+                            <a href="#" data-scroll-goto="3" class="btn btn-1">download App</a>
+                            <button type="button"  class="btn btn-1 video-play-btn">
                                 <i class="fas fa-play"></i>
                             </button>
                         </div>
@@ -116,7 +116,7 @@
     <!-- Home section End -->
 
     <!-- Feature Section Stard -->
-    <section class="feature section-padding">
+    <section class="feature section-padding"data-scroll-index="1" id="Features">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
@@ -213,7 +213,7 @@
     <!-- Fun Facts section End -->
 
     <!-- App Screenshoot section Stard -->
-    <section class="app-screenshort section-padding">
+    <section class="app-screenshort section-padding" data-scroll-index="2" id="Screenshoot">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -246,7 +246,7 @@
     <!-- App Screenshoot section End -->
 
     <!-- App download section Stard -->
-    <div class="section app-download section-padding">
+    <section class="section app-download section-padding" data-scroll-index="3">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -285,7 +285,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- App download section End -->
 
     <!-- How it Work Section Stard -->
@@ -333,7 +333,7 @@
     <!-- How it Work Section End -->
 
     <!-- testimonials Section Stard -->
-    <section class="testimonials section-padding">
+    <section class="testimonials section-padding" data-scroll-index="4" id="Testimonials">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -419,7 +419,7 @@
     <!-- testimonials Section End -->
 
     <!-- Pricint section stard -->
-    <section class="pricing section-padding">
+    <section class="pricing section-padding" data-scroll-index="5" id="Pricing">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -653,7 +653,7 @@
     <!-- faq section End -->
 
     <!-- contact Section Stard  -->
-    <section class="contact section-padding">
+    <section class="contact section-padding" data-scroll-index="6">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -759,11 +759,11 @@
                     <div class="footer-col">
                         <h3>Quick Link</h3>
                         <ul>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">features</a></li>
-                            <li><a href="#">Screenshoot</a></li>
-                            <li><a href="#">pricing</a></li>
-                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#Home">home</a></li>
+                            <li><a href="#Features">features</a></li>
+                            <li><a href="#Screenshoot">Screenshoot</a></li>
+                            <li><a href="#Pricing">pricing</a></li>
+                            <li><a href="#Testimonials">Testimonials</a></li>
                         </ul>
                     </div>
                 </div>
@@ -781,7 +781,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="copyright-text">&copy; 2021, All right serveice</p>
+                    <p class="copyright-text">&copy; 2021. All Rights Reserve, Made With <i style="color: red;" class="fas fa-heart"></i> by <a href="https://facebook.com/raihan.mahmudi.50">Raihan</a></p>
                 </div>
             </div>
         </div>

@@ -97,4 +97,8 @@ $(document).ready(function () {
             }
             }
     });
+    // page scroling sectin
+    $.scrollIt({
+        topOffset: -50
+    });
 });
