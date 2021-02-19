@@ -1110,6 +1110,26 @@ Video POpup Stard
     font-weight: 300;
 }
 
+/* ----------------- Toggle Theme- Dark and light theme */
+.toggle-theme{
+    position: fixed;
+    right: 0;
+    top:calc(50% - 20px);
+    height: 40px;
+    width: 40px;
+    background-color: var(--dark-to-main-color);
+    color: #ffffff;
+    z-index: 1200;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: var(--shadaw-black-300);
+    font-size: 16px;
+    text-align: center;
+}
+.toggle-theme i{
+    line-height: 40px;
+}
+
 /* -------------------------------------------------------------
 ********************** Responsive CSS *************************
 ------------------------------------------------------------------ */
