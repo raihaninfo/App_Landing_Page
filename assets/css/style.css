@@ -1027,6 +1027,9 @@ Video POpup Stard
     padding: 20px 30px;
     background-color: var(--black-100);
 }
+.faq .accordion-body p {
+    color: var(--black-900);
+}
 
 .faq .accordion-header p {
     font-weight: 300;
