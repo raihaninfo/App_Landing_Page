@@ -797,6 +797,10 @@ Video POpup Stard
     text-align: center;
 }
 
+.how-it-work-item h3 {
+	color: var(--black-900);
+}
+
 .testimonials-item .img-box {
     height: 100px;
     width: 100px;
