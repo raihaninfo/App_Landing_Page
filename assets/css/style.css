@@ -63,7 +63,8 @@ body {
     --black-000: #ffffff;
     --black-alpha-100: rgba(0, 0, 0, 05);
 }
-body.dark{
+
+body.dark {
     background-color: var(--bg-dark);
     --black-400: var(--bg-dark);
     --black-100: var(--bg-dark);
@@ -92,7 +93,8 @@ a {
     display: inline-block;
     color: #ffffff;
 }
-a:hover{
+
+a:hover {
     color: #ffffff;
 }
 
@@ -202,11 +204,13 @@ ul {
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
     }
 }
-@keyframes zoominout_01{
-    0%{
+
+@keyframes zoominout_01 {
+    0% {
         transform: scale(0);
     }
-    100%{
+
+    100% {
         transform: scale(1);
         opacity: 0;
     }
@@ -246,7 +250,7 @@ ul {
 }
 
 /* preloder  */
-.preloder{
+.preloder {
     position: fixed;
     top: 0;
     left: 0;
@@ -258,14 +262,16 @@ ul {
     align-items: center;
     justify-content: center;
 }
-.preloder span{
+
+.preloder span {
     display: block;
-    height: 60px ;
+    height: 60px;
     width: 60px;
     background-color: var(--dark-to-main-color);
     border-radius: 50%;
     animation: zoominout_01 1s ease infinite;
 }
+
 /* ------------------
     navbar          
 ---------------------*/
@@ -1153,10 +1159,10 @@ Video POpup Stard
 }
 
 /* ----------------- Toggle Theme- Dark and light theme */
-.toggle-theme{
+.toggle-theme {
     position: fixed;
     right: 0;
-    top:calc(50% - 20px);
+    top: calc(50% - 20px);
     height: 40px;
     width: 40px;
     background-color: var(--dark-to-main-color);
@@ -1168,15 +1174,16 @@ Video POpup Stard
     font-size: 16px;
     text-align: center;
 }
-.toggle-theme i{
+
+.toggle-theme i {
     line-height: 40px;
 }
 
 /* -------------------------------------------------------------
 ********************** Responsive CSS *************************
 ------------------------------------------------------------------ */
-@media(max-width:991px){
-    .navbar-toggler{
+@media(max-width:991px) {
+    .navbar-toggler {
         background-color: var(--dark-to-main-color);
         box-shadow: var(--shadaw-black-300);
         height: 34px;
@@ -1185,71 +1192,89 @@ Video POpup Stard
         font-size: 17px;
         color: #ffffff;
     }
-    .navbar-nav{
+
+    .navbar-nav {
         background-color: var(--dark-to-main-color);
         box-shadow: var(--shadaw-black-300);
     }
-    .navbar .nav-item{
+
+    .navbar .nav-item {
         margin: 0;
         padding: 5px 15px;
     }
+
     .navbar.navbar-shrink .navbar-toggler,
-    .navbar.navbar-shrink .navbar-nav{
+    .navbar.navbar-shrink .navbar-nav {
         background-color: var(--main-color);
     }
-    .home-img .sircle{
+
+    .home-img .sircle {
         height: 320px;
         width: 320px;
     }
-    .home-img .sircle::before{
+
+    .home-img .sircle::before {
         left: 18px;
         top: 18px;
         transform-origin: 142px 142px;
     }
-    .home-text h1{
+
+    .home-text h1 {
         font-size: 40px;
     }
+
     .pricing-plan,
     .how-it-work-item,
-    .app-download-item{
+    .app-download-item {
         margin-bottom: 30px;
     }
-    .how-it-work-item.line-right::before{
+
+    .how-it-work-item.line-right::before {
         content: none;
     }
-    .how-it-work-item{
+
+    .how-it-work-item {
         border-radius: 10px;
     }
 }
-@media(max-width:767px){
-    .home-text{
+
+@media(max-width:767px) {
+    .home-text {
         margin-bottom: 80px;
     }
-    .fun-facts-img{
+
+    .fun-facts-img {
         margin-bottom: 30px;
     }
-    .footer-col{
+
+    .footer-col {
         margin-bottom: 30px;
     }
-    .section-title{
+
+    .section-title {
         font-size: 35px;
     }
-    .fun-facts .section-title h2{
+
+    .fun-facts .section-title h2 {
         text-align: center;
     }
 
 }
-@media(max-width:575px){
-    .home-text h1{
+
+@media(max-width:575px) {
+    .home-text h1 {
         font-size: 30px;
     }
-    .home-text p{
+
+    .home-text p {
         font-size: 16px;
     }
-    .contact-form{
+
+    .contact-form {
         margin-top: 20px;
     }
-    .section-title{
+
+    .section-title {
         font-size: 30px;
     }
 }
