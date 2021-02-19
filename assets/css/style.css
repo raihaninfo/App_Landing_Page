@@ -982,6 +982,7 @@ Video POpup Stard
     transition: all 0.5s ease;
     cursor: pointer;
     position: relative;
+    border-radius: 20px;
 }
 
 .faq .accordion-header::before {
