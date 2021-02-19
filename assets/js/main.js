@@ -1,3 +1,8 @@
+// preloder
+$(window).on("load",function(){
+    $(".preloder").fadeOut("slow");
+});
+
 $(document).ready(function () {
     // navbar sharink
     $(window).on("scroll",function(){
