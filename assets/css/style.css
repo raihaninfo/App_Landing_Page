@@ -2,7 +2,7 @@
 
 /*
 ***********************************
-* Template Name: Shala - App Landing Page Theme
+* Template Name: Mobile - App Landing Page Theme
 * Author Name: Md Abu Raihan
 * Support: raihanmahmudi35@gmail.com 
 * Version: 1.0.0
@@ -690,7 +690,7 @@ Video POpup Stard
 }
 
 .app-download .section-title h2 {
-    color: #ffffff;
+    color: var(--black-000);
 }
 
 .app-download::before {
@@ -701,7 +701,7 @@ Video POpup Stard
     height: 100%;
     width: 100%;
     z-index: -1;
-    background-color: var(--main-to-dark-color);
+    background-color: #ac8dff;
     opacity: 0.8;
 }
 
@@ -721,7 +721,7 @@ Video POpup Stard
 
 .app-download-item h3 {
     font-size: 22px;
-    color: var(--black-900);
+    color: #000000;
     margin: 20px 0;
     font-weight: 500;
     text-transform: capitalize;
