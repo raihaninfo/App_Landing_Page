@@ -13,8 +13,6 @@ $(document).ready(function () {
         }
     });
 
-
-
     // popup video
     const videoSrc = $("#plear-1").attr("src");
     $(".video-play-btn, .video-popup").on("click", function () {
@@ -141,6 +139,5 @@ $(document).ready(function () {
             $(".toggle-theme i").addClass("fa-moon")
         }
     }
-
 
 });
