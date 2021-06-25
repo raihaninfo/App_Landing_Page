@@ -108,6 +108,7 @@ $(document).ready(function () {
     });
 
     // toggle theme -dark and light theme
+//     theme color change
     function toggleTheme() {
         if (localStorage.getItem("shala-theme") !== null) {
             if (localStorage.getItem("shala-theme") == "dark") {
