@@ -1096,7 +1096,6 @@ Video POpup Stard
     box-shadow: var(--shadaw-black-100);
     border-radius: 30px;
     padding: 0 24px;
-    color: var(--black-900);
     background-color: var(--black-000);
     transition: all 0.5s ease;
 }
